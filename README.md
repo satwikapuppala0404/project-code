@@ -19,8 +19,6 @@ sound.export(music_file,format="wav")
 #invoke the genre recognition service
 grs = Genre_Recognition_Service()
 
-43
-
 # make prediction
 prediction = grs.predict(music_file)
 os.remove(music_file)
